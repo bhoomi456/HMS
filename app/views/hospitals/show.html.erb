@@ -1,0 +1,27 @@
+<h2>Hospital Details</h2>
+
+<table border="1" cellpadding="10" cellspacing="0">
+  <tr>
+    <th>Name</th>
+    <td><%= @hospital[:name] %></td>
+  </tr>
+
+  <tr>
+    <th>Email</th>
+    <td><%= @hospital[:email] %></td>
+  </tr>
+
+  <tr>
+    <th>Address</th>
+    <td><%= @hospital[:address] %></td>
+  </tr>
+
+  <tr>
+    <th>Phone</th>
+    <td><%= @hospital[:phone] %></td>
+  </tr>
+</table>
+
+<br>
+
+<%= link_to "Back to Hospitals", "/hospitals" %>

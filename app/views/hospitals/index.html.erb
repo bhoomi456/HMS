@@ -1,0 +1,27 @@
+<h2>Hospitals List</h2>
+
+<table border="1" cellpadding="10" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hospitals.each do |hospital| %>
+      <tr>
+        <td><%= hospital[:id] %></td>
+        <td><%= hospital[:name] %></td>
+        <td><%= hospital[:email] %></td>
+        <td><%= hospital[:address] %></td>
+        <td><%= hospital[:phone] %></td>
+        <td><%= link_to "Show", "/hospitals/#{hospital[:id]}" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
