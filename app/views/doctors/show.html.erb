@@ -1,0 +1,27 @@
+<h2>Doctor Details</h2>
+
+<table border="1" cellpadding="10" cellspacing="0">
+  <tr>
+    <th>Name</th>
+    <td><%= @doctor[:name] %></td>
+  </tr>
+
+  <tr>
+    <th>Specialization</th>
+    <td><%= @doctor[:specialization] %></td>
+  </tr>
+
+  <tr>
+    <th>Experince</th>
+    <td><%= @doctor[:experience] %></td>
+  </tr>
+
+  <tr>
+    <th>Status</th>
+    <td><%= @doctor[:available] %></td>
+  </tr>
+</table>
+
+<br>
+
+<%= link_to "Back to Doctors", "/doctors" %>
