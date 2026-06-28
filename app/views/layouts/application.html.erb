@@ -35,19 +35,12 @@
 
     </header>
 
-    <nav style="background-color:#bbdefb; padding:15px; text-align:center;">
-      <a href="/hospitals" style="margin:0 15px; color:#0d47a1; text-decoration:none; font-weight:bold;">Hospitals</a>
-    
-      <a href="/doctors" style="margin:0 15px; color:#0d47a1; text-decoration:none; font-weight:bold;">Doctors</a>
-    </nav>
+    <%= render "layouts/navbar" %>
 
-    <main>
+    <main style="padding:20px;">
       <%= yield %>
     </main>
 
-    <footer>
-      <p>© 2026 Hospital Management System</p>
-    </footer>
-
+    <%= render "layouts/footer" %>
   </body>
 </html>

@@ -2,7 +2,7 @@
 
 <table border="1" cellpadding="10" cellspacing="0" width="100%">
   <thead>
-    <tr>
+    <tr style="background:#bbdefb;">
       <th>ID</th>
       <th>Name</th>
       <th>Email</th>
@@ -20,7 +20,7 @@
         <td><%= hospital[:email] %></td>
         <td><%= hospital[:address] %></td>
         <td><%= hospital[:phone] %></td>
-        <td><%= link_to "Show", "/hospitals/#{hospital[:id]}" %></td>
+        <td><%= link_to "Show", "/hospitals/#{hospital[:id]}" ,style: "background:#1976d2; color:white; padding:5px 10px; text-decoration:none; border-radius:4px;"%></td>
       </tr>
     <% end %>
   </tbody>
