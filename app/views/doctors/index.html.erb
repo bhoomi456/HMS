@@ -18,8 +18,8 @@
         <td><%= doctor[:id] %></td>
         <td><%= doctor[:name] %></td>
         <td><%= doctor[:specialization] %></td>
-        <td><%= doctor[:experience] %></td>
-        <td><%= doctor[:available] %></td>
+        <td><%= experience_label(doctor[:experience])%></td>
+        <td><%= status_badge(doctor[:available])%></td>
         <td><%= link_to "Show", "/doctors/#{doctor[:id]}",style: "background:#1976d2; color:white; padding:5px 10px; text-decoration:none; border-radius:4px;" %></td>
       </tr>
     <% end %>
