@@ -1,0 +1,33 @@
+<div style="width: 400px;border: 1px solid #ddd;border-radius: 10px;overflow: hidden;box-shadow: 0 2px 8px rgba(0,0,0,0.1);background: white;margin: 18px;">
+  <!-- Header -->
+  <div style="background: #1565c0;color: white;text-align: center;padding: 8px;font-size: 14px;font-weight: bold;">
+    Multi Speciality Hospital
+  </div>
+
+   <!-- Body -->
+  <div style="display: flex;gap: 20px;padding: 25px;align-items: center;">
+    <!-- Hospital Icon -->
+    <div style="width: 100px;height: 100px;border-radius: 50%;background: #f1f1f1;display: flex;justify-content: center;align-items: center;font-size: 50px;">
+      🏥
+    </div>
+
+     <!-- Details -->
+    <div>
+      <h2 style="margin:0;">
+        <%= hospital[:name] %>
+      </h2>
+
+      <p style="margin:10px 0;">
+        📍 <%= hospital[:address] %>
+      </p>
+
+      <p style="margin:10px 0;">
+        📞 <%= hospital[:phone] %>
+      </p>
+
+      <p style="margin:10px 0;">
+        ✉️ <%= hospital[:email] %>
+      </p>
+    </div>
+  </div>
+</div>

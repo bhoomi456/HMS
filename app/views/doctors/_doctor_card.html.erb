@@ -1,0 +1,25 @@
+<div class="card" style="width:300px; border:1px solid #ddd; border-radius:10px; padding:20px; background:white;box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+  <h3 style="margin:0;color:#1f2937;">
+    Dr. <%= doctor[:name] %>
+  </h3>
+
+  <p style="color:#6b7280;">
+    <%= doctor[:specialization] %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= doctor[:email] %>
+  </p>
+
+  <p>
+    <strong>Experience:</strong>
+    <%= doctor[:experience] %> Years
+  </p>
+
+  <p>
+    <strong>Fee:</strong>
+    ₹<%= doctor[:consultation_fee]%>
+  </p>
+
+</div>

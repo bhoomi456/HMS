@@ -1,27 +1,5 @@
-<h2>Doctors List</h2>
-
-<table border="1" cellpadding="10" cellspacing="0" width="100%">
-  <thead>
-    <tr style="background:#bbdefb;">
-      <th>ID</th>
-      <th>Name</th>
-      <th>Specialization</th>
-      <th>Experince</th>
-      <th>Status</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @doctors.each do |doctor| %>
-      <tr>
-        <td><%= doctor[:id] %></td>
-        <td><%= doctor[:name] %></td>
-        <td><%= doctor[:specialization] %></td>
-        <td><%= experience_label(doctor[:experience])%></td>
-        <td><%= status_badge(doctor[:available])%></td>
-        <td><%= link_to "Show", "/doctors/#{doctor[:id]}",style: "background:#1976d2; color:white; padding:5px 10px; text-decoration:none; border-radius:4px;" %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div style="display:flex; flex-wrap:wrap; gap:20px;">
+  <% @doctors.each do |doctor| %>
+    <%= render "doctor_card", doctor: doctor %>
+  <% end %>
+</div>
